@@ -1,0 +1,70 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  background-color: #007bff; /* Match the Bootstrap primary color */
+  color: white;
+  padding: 20px 0;
+}
+
+footer .mx-5 {
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
+}
+
+footer .icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-container img {
+  margin-bottom: 15px; /* Add some space between the image and text */
+}
+
+.icon{
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.githubIcon{
+  background-image: url('./assets/github.png');
+}
+
+.linkdInIcon{
+  background-image: url('./assets/linkdin.png');
+}
+
+.stackOverflowIcon{
+  background-image: url('./assets/stackoverflow.png');
+} 
