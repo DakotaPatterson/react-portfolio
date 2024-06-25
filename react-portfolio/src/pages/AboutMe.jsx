@@ -19,7 +19,7 @@ export default function AboutMe() {
         <br></br>
         <br></br>
         In my free time I enjoy going to the gym, cooking new foods and spending time with my two huskies.
-        I love spending time outdoors abd exploring new places and all they have to offer!
+        I love spending time outdoors and exploring new places and all they have to offer!
         <br></br>
         <br></br>
         I am also the Director of Engagement for a 501c3 non-profit organization in Columbus, Ohio.
