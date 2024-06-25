@@ -68,3 +68,31 @@ footer a:hover {
 .stackOverflowIcon{
   background-image: url('./assets/stackoverflow.png');
 } 
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-body > .btn {
+  margin-top: auto;
+}
+
+.image-container {
+  width: 100%;
+  height: 200px; 
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  object-position: center; /* Center the image within the container */
+}
