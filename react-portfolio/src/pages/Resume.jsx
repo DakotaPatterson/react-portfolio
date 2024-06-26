@@ -1,19 +1,54 @@
+import React from 'react';
+import { Container, Row, Col, ListGroup, Button } from 'react-bootstrap';
+
+import resumeFile from '../assets/ResumeDoc.pdf';
+
+
 export default function Resume() {
+
+  const proficiencies = [
+    'HTML',
+    'CSS',
+    'Git',
+    'JavaScript',
+    'Bootstrap',
+    'JQuery',
+    'JSON',
+    'AJAX',
+    'Node',
+    'ES6',
+    'Object-oriented programming',
+    'Express',
+    'MySQL',
+    'MVC',
+    'Sequelize',
+    'MongoDB',
+    'React',
+    'Insomnia',
+    'Heroku',
+    'Visual Studio Code',
+  ];
+
   return (
-    <div>
-      <h1>Resume</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
-    </div>
+    <Container className="my-5">
+      <Row>
+        <Col>
+          <h1 className="mb-4">Resume</h1>
+          <Button variant="primary" href={resumeFile} target = "_blank" download>
+            Download Resume
+          </Button>
+        </Col>
+      </Row>
+      <Row className="mt-4">
+        <Col>
+          <h2>Proficiencies</h2>
+          <ListGroup>
+            {proficiencies.map((proficiency, index) => (
+              <ListGroup.Item key={index}>{proficiency}</ListGroup.Item>
+            ))}
+          </ListGroup>
+        </Col>
+      </Row>
+    </Container>
   );
 }
